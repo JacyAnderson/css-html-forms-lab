@@ -50,27 +50,60 @@ h1 {
 .formSection {
 	background-color: #E3E6EC;
 	margin:20px;
-	padding: 10px;
-	width: 40%;
+	padding: 5px;
+/*	width: 40%;*/
+}
 
-}
 .row {
-	padding: 10px;
+	padding: 5px;
 }
+
 .formGroup {
 	width: 100%;
 	display: inline-block;
 }
+
 .radio, .checkboxes {
 	padding: 0 0 0 15px;
 }
-.formGroup label {
-	padding: 10px 0;
+
+.formGroup, label {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	display: block;
+	vertical-align: middle;
 }
-.check, .radio {
-	clear: left;
+
+#radio1, #radio2, #radio3, #check1, #check2, #check3{
+	clear: none;
+	display: inline;
+	float:left;
+	margin: 20px;
 }
+
+#name, #verb-1, #mission, #noun-1, #noun2, #submit {
+	min-height: 48px;
+	padding: 14px;
+}
+#name, #mission, #verb-1, #noun-1, #noun-2 {
+	border: 1px solid #CCC;
+	box-shadow: none;
+	width: 100%;
+}
+
+#submit {
+	float: right;
+	font-weight: 700;
+	display: inline-block;
+	background-color: rgba(39, 208, 127, .5);
+}
+#submit:hover{
+	background-color: rgba(39, 208, 127, 1);
+}
+textarea {
+	height: 100px;
+}
+
 /* 
 
 	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
@@ -105,9 +138,14 @@ h1 {
 
 /*-------- Results Styles --------*/
 
-
+.results {
+	max-width: 500px;
+	display: block;
+	background-color: #C8DBB4;
+	padding: 15px;
+}
 /* 
-
+	
 	The results container should also fill the width of its container, but only up to 500px.
 
 	The results container should have a background color of #C8DBB3, and comfortable padding around the text.
