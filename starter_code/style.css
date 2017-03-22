@@ -3,8 +3,13 @@
 	box-sizing: border-box; 
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+	font-family: 'Proza Libre', sans-serif;
 }
-
+h1 {
+	font-weight: 700;
+	font-size: 35px;
+	margin: 20px;
+}
 /* 
 	Use Google Fonts to make all of the text Proza Libre.
 
@@ -12,7 +17,21 @@
 */
 
 /*-------- Main Styles --------*/
+#main {
+	width: 100%;
+}
 
+.formSection {
+	float: left;
+}
+.results {
+	float: left;
+	width: 40%;
+	margin: 40px;
+}
+.container, .formGroup, input, #mission {
+	border-radius: 7px;
+} 
 /* 
 	Make the main container the full width of the page.
 
@@ -22,8 +41,36 @@
 */
 
 /*-------- Form Styles --------*/
+.form {
+	width: 100%
+	max-width: 500px;
+	display: inline-block;
+	margin: 20px;
+}
+.formSection {
+	background-color: #E3E6EC;
+	margin:20px;
+	padding: 10px;
+	width: 40%;
 
-
+}
+.row {
+	padding: 10px;
+}
+.formGroup {
+	width: 100%;
+	display: inline-block;
+}
+.radio, .checkboxes {
+	padding: 0 0 0 15px;
+}
+.formGroup label {
+	padding: 10px 0;
+	display: block;
+}
+.check, .radio {
+	clear: left;
+}
 /* 
 
 	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
